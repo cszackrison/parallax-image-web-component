@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component Test</title>
+    <style>
+        #debug {
+            position: absolute;
+        }
+        body {
+            padding-top: 100px;
+            text-align: center;
+        }
+        parallax-img {
+            display: inline-block;
+        }
+    </style>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+</head>
+<body>
+    <h1>Parallax Image Test</h1>
+    <parallax-img
+        startz="100"
+        perspective="1000"
+        scalar="6"
+        src-0="back2.gif"
+        src-1="mid2.png"
+        src-2="front2.png"
+        spacing="100"
+    >
+    </parallax-img>
+    <div>
+        <p>Does this test work?</p>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
