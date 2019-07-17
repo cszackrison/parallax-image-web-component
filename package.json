@@ -1,0 +1,20 @@
+{
+  "name": "parallax-image-web-component",
+  "version": "1.0.0",
+  "description": "a drop in web component for a parallaxing image",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cszackrison/parallax-image-web-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cszackrison/parallax-image-web-component/issues"
+  },
+  "homepage": "https://github.com/cszackrison/parallax-image-web-component#readme"
+}
