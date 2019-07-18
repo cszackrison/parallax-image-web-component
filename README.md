@@ -11,12 +11,11 @@ This is a drop in web component for a parallaxing image.
           startz="100"
           perspective="1000"
           scalar="6"
-          src-0="back2.gif"
-          src-1="mid2.png"
-          src-2="front2.png"
           spacing="100"
-      >
-      </parallax-img>
-      <script type="text/javascript" src="main.js"></script>
+          src-0="assets/back.gif"
+          src-1="assets/mid.png"
+          src-2="assets/front.png"
+      ></parallax-img>
+      <script type="text/javascript" src="src/web-component-parallax-image.js"></script>
   </body>
 ```
