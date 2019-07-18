@@ -8,13 +8,15 @@ This is a drop in web component for a parallaxing image.
 ```html
   <body>
       <parallax-img
-          startz="100"
+          borderradius=""
+          clippath="ellipse(37% 50% at 50% 50%)"
           perspective="1000"
           scalar="6"
           spacing="100"
           src-0="assets/back.gif"
           src-1="assets/mid.png"
           src-2="assets/front.png"
+          startz="50"
       ></parallax-img>
       <script type="text/javascript" src="src/web-component-parallax-image.js"></script>
   </body>
