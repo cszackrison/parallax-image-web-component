@@ -18,7 +18,6 @@
             this.deviceY = 0;
             this.imageLoadCounter = 0;
             this.handleMouseMove = this.onMouseMove.bind(this);
-            this.handleMouseOut = this.onMouseOut.bind(this);
             this.handleImageLoad = this.onImageLoad.bind(this);
             this.handleDeviceMotion = this.onDeviceMotion.bind(this);
 
@@ -63,7 +62,6 @@
 
         disconnectedCallback() {
             window.removeEventListener("mousemove", this.handleMouseMove);
-            window.removeEventListener("mouseout", this.handleMouseOut);
             window.removeEventListener("devicemotion", this.handleDeviceMotion);
             this.elements.forEach(a => a.removeEventListener('load', this.handleImageLoad, false));
         }
@@ -129,7 +127,6 @@
         initialize() {
             this.updateDimensions();
             window.addEventListener("mousemove", this.handleMouseMove);
-            window.addEventListener("mouseout", this.handleMouseOut);
             window.addEventListener("devicemotion", this.handleDeviceMotion);
         }
 
@@ -180,10 +177,6 @@
             const xAngle = (0.5 - (y / width)) * this.scalar;
 			const yAngle = -(0.5 - (x / width)) * this.scalar;
             this.rotate(xAngle, yAngle);
-        }
-
-        onMouseOut(e) {
-            this.rotate(0, 0);
         }
     }
 
